@@ -372,6 +372,10 @@ body {
         background-position: center;
         padding: 0 100px;
         box-sizing: border-box;
+
+        >div {
+            width: 55%;
+        }
     }
 
     .author {
@@ -465,6 +469,9 @@ body {
 // FOR MOBILE
 
 @media screen and (max-width: 810px) {
+    h2 {
+        line-height: 48px;
+    }
     .section {
         box-sizing: border-box;
         padding: 24px 24px;
@@ -497,5 +504,47 @@ body {
     }
     .offer-card {
         height: 80vh;
+        max-height: inherit;
+
+        .offer-container {
+            padding: 24px 124px 60px 124px;
+            left: -100px;
+            right: -100px;
+            width: auto;
+            top: 0px;
+            height: fit-content;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+    .section#section6 .offer-container {
+        left: -100px;
+    }
+    #section4, #section9 {
+        gap: 24px;
+        h2, h3 {
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+        .gap-48 {
+            gap: 0;
+        }
+    }
+    .grey-card {
+        padding: 24px 24px;
+        gap: 24px;
+    }
+    .offer-card#offer-card4 {
+        padding: 24px 24px;
+    }
+    .offer-card#offer-card5 {
+        width: 100%;
+        padding: 0;
+        >div {
+            width: 100%;
+            padding: 24px 24px;
+            box-sizing: border-box;
+            background: #202076;
+        }
     }
   }

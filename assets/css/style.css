@@ -431,6 +431,9 @@ body .centered {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.offer-card#offer-card5 > div {
+  width: 55%;
+}
 .offer-card .author {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,6 +541,9 @@ body .centered {
 }
 
 @media screen and (max-width: 810px) {
+  h2 {
+    line-height: 48px;
+  }
   .section {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -576,5 +582,49 @@ body .centered {
   }
   .offer-card {
     height: 80vh;
+    max-height: inherit;
+  }
+  .offer-card .offer-container {
+    padding: 24px 124px 60px 124px;
+    left: -100px;
+    right: -100px;
+    width: auto;
+    top: 0px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .section#section6 .offer-container {
+    left: -100px;
+  }
+  #section4, #section9 {
+    gap: 24px;
+  }
+  #section4 h2, #section4 h3, #section9 h2, #section9 h3 {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+  #section4 .gap-48, #section9 .gap-48 {
+    gap: 0;
+  }
+  .grey-card {
+    padding: 24px 24px;
+    gap: 24px;
+  }
+  .offer-card#offer-card4 {
+    padding: 24px 24px;
+  }
+  .offer-card#offer-card5 {
+    width: 100%;
+    padding: 0;
+  }
+  .offer-card#offer-card5 > div {
+    width: 100%;
+    padding: 24px 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #202076;
   }
 }
