@@ -461,3 +461,41 @@ body {
 .gap-48 {
     gap: 48px;
 }
+
+// FOR MOBILE
+
+@media screen and (max-width: 810px) {
+    .section {
+        box-sizing: border-box;
+        padding: 24px 24px;
+    }
+    .section#section1 {
+        height: 90vh;
+
+        img {
+            width: 140%;
+            margin-left: -25%;
+        }
+
+        .bloc-title {
+            width: 100vw;
+            padding: 24px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    }
+    .section#section1,
+    .section#section5 .list-card,
+    .section#section7 .list-card,
+    .section#section9 .card,
+    .grey-card,
+    .section#section11 .card-products {
+        flex-direction: column;
+    }
+    .section#section4 .card {
+        flex-direction: column-reverse;
+    }
+    .offer-card {
+        height: 80vh;
+    }
+  }
