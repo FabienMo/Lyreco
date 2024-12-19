@@ -466,11 +466,31 @@ body {
     gap: 48px;
 }
 
+@media screen and (min-width: 811px) {
+    .sm-hide {
+        display: none;
+    }
+}
+
 // FOR MOBILE
 
 @media screen and (max-width: 810px) {
-    h2 {
-        line-height: 48px;
+    .md-hide {
+        display: none;
+    }
+    body {
+        h1 {
+            font-size: 42px;
+            line-height: 50px;
+        }
+        h2 {
+            font-size: 36px;
+            line-height: 45px;
+        }
+        #section4 h3 {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
     .section {
         box-sizing: border-box;
@@ -480,8 +500,8 @@ body {
         height: 90vh;
 
         img {
-            width: 140%;
-            margin-left: -25%;
+            width: 180%;
+            margin-left: -55%;
         }
 
         .bloc-title {
@@ -537,14 +557,55 @@ body {
     .offer-card#offer-card4 {
         padding: 24px 24px;
     }
+
+
+
+    .offer-card#offer-card1 {
+        background-image: url(../images/mobile-img3.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        .mt-48 {
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    .offer-card#offer-card2 {
+        background-image: url(../images/mobile-energizer.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .offer-card#offer-card3 {
+        background-image: url(../images/mobile-img6.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
     .offer-card#offer-card5 {
+        background-image: url(../images/mobile-img9.png);
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
         width: 100%;
         padding: 0;
+        justify-content: flex-start;
         >div {
             width: 100%;
             padding: 24px 24px;
             box-sizing: border-box;
             background: #202076;
         }
+    }
+    .list-card .blue-card,
+    .list-card .key-number-card {
+        min-height: inherit;
+    }
+
+    .list-card .key-number-card {
+        padding: 24px 0 48px;
     }
   }
