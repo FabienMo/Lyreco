@@ -256,14 +256,16 @@ body {
             height: auto;
         }
         .play {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 64px;
-            height: 64px;
-            transform: translate(-50%, -50%);
-            background-image: url(../icons/play.svg);
-            cursor: pointer;
+            width: 90vw;
+            height: 50vw;
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // width: 64px;
+            // height: 64px;
+            // transform: translate(-50%, -50%);
+            // background-image: url(../icons/play.svg);
+            // cursor: pointer;
         }
     }
     &#section5 {
@@ -557,8 +559,6 @@ body {
     .offer-card#offer-card4 {
         padding: 24px 24px;
     }
-
-
 
     .offer-card#offer-card1 {
         background-image: url(../images/mobile-img3.png);
